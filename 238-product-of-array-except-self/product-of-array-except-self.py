@@ -12,3 +12,16 @@ class Solution:
 
             rightproduct = rightproduct * nums[i]
         return ans  
+"""
+n = len(nums)
+ans = []
+for i in range(n):
+    product = 1
+
+    for j in range(n):
+        if i != j:
+            product = product * nums[j]
+    ans.append(product)
+
+return ans
+"""
