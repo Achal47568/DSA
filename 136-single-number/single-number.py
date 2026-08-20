@@ -17,11 +17,16 @@ example: 4^1^2^1^2
          4^0^0
          4
 
-code:
+code 1 : 
 
 ans = 0
 for num in nums:
     ans ^= num
 return ans
+
+"""
+"""
+code 2:  return list({x for x in nums if nims.count(x) == 1})[0]
+code 3:  return next(iter(set(nums)))   # only works when all the duplicates are removed
 
 """
